@@ -162,7 +162,7 @@
                     <useReleaseProfile>false</useReleaseProfile>
                     <preparationGoals>clean install</preparationGoals>
                     <goals>deploy</goals>
-                    <arguments>-Papache-release -Dgpg.skip=true</arguments>
+                    <arguments>-Papache-release,apache-dev -Dgpg.skip=true</arguments>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
