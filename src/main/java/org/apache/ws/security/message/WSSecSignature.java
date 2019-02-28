@@ -123,12 +123,12 @@ public class WSSecSignature extends WSSecSignatureBase {
         // Try to install the Santuario Provider - fall back to the JDK provider if this does
         // not work
         try {
-            signatureFactory = XMLSignatureFactory.getInstance("DOM", "ApacheXMLDSig");
+            signatureFactory = XMLSignatureFactory.getInstance("DOM", "XMLDSig");
         } catch (NoSuchProviderException ex) {
             signatureFactory = XMLSignatureFactory.getInstance("DOM");
         }
         try {
-            keyInfoFactory = KeyInfoFactory.getInstance("DOM", "ApacheXMLDSig");
+            keyInfoFactory = KeyInfoFactory.getInstance("DOM", "XMLDSig");
         } catch (NoSuchProviderException ex) {
             keyInfoFactory = KeyInfoFactory.getInstance("DOM");
         }
