@@ -16,15 +16,13 @@
   specific language governing permissions and limitations
   under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.ws.security</groupId>
     <artifactId>wss4j</artifactId>
     <packaging>bundle</packaging>
     <name>WSS4J</name>
-    <version>1.6.4.SEE1-SNAPSHOT</version>
+    <version>1.6.4.SEE2-SNAPSHOT</version>
     <description>
         The Apache WSS4J project provides a Java implementation of the primary security standards
         for Web Services, namely the OASIS Web Services Security (WS-Security) specifications
@@ -71,7 +69,8 @@
         <connection>scm:git:git@github.com:seeburger-ag/wss4j.git</connection>
         <developerConnection>scm:git:git@github.com:seeburger-ag/wss4j.git</developerConnection>
         <url>scm:git:git@github.com:seeburger-ag/wss4j.git</url>
-    </scm>
+      <tag>HEAD</tag>
+  </scm>
     <organization>
         <name>The Apache Software Foundation</name>
         <url>http://www.apache.org/</url>
@@ -268,7 +267,7 @@
             <activation>
                 <property>
                     <name>release</name>
-                    <value></value>
+                    <value />
                 </property>
             </activation>
             <build>
@@ -286,7 +285,7 @@
             <activation>
                 <property>
                     <name>deploy</name>
-                    <value></value>
+                    <value />
                 </property>
             </activation>
             <build>
